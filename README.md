@@ -3,7 +3,8 @@
 **Team Name:** One Piece in Real  
 **Project Name:** LinkPulse
 
-LinkPulse is a URL shortening and link management platform built with Python and Flask. It helps users create short links, manage link settings, generate QR codes, and monitor link activity through an analytics dashboard.
+**Live Demo:** https://one-piece-in-real-linkpulse.onrender.com  
+**GitHub Repository:** https://github.com/bhaweshb88-hub/One-Piece-in-Real-LinkPulse
 
 ---
 
@@ -11,28 +12,33 @@ LinkPulse is a URL shortening and link management platform built with Python and
 
 Long URLs are difficult to share, manage, and organize. Basic URL shorteners may not provide sufficient tools for tracking clicks, organizing marketing campaigns, or controlling access to links.
 
-LinkPulse aims to make link management easier by combining URL shortening, link controls, QR code generation, and analytics in one platform.
+Individuals, developers, and marketing teams need a centralized platform to create short links, manage their settings, and monitor link activity.
+
+LinkPulse addresses these challenges by bringing URL shortening, link management, QR code generation, and analytics together in one application.
 
 ## 2. Proposed Solution
 
-LinkPulse provides a centralized platform for creating and managing short URLs.
+LinkPulse is a web-based URL shortening and link management platform built with Python and Flask.
 
-Users can create short links, customize aliases, configure expiry and click limits, protect links with passwords, and organize links using campaigns and tags.
+Users can create short URLs from long destination links, customize aliases, configure link expiry and click limits, and manage links through a dashboard.
 
-The dashboard helps users monitor link activity and manage their links.
+The platform also provides QR code generation, link activity tracking, and administrative controls to help users manage their links efficiently.
+
+**Try the live application:**  
+https://one-piece-in-real-linkpulse.onrender.com
 
 ## 3. Features
 
-### URL Management
-- Create short URLs from longer destination URLs.
-- Use custom aliases for short links.
+### URL Shortening and Management
+- Convert long URLs into short, shareable links.
+- Create custom aliases for short links.
 - Configure link expiry.
 - Set click limits.
-- Protect links with passwords.
+- Protect supported links with passwords.
 - Enable or disable links.
 
 ### Analytics Dashboard
-- View total links and recorded clicks.
+- View link and click statistics.
 - Monitor link status.
 - Review link activity through the dashboard.
 - Organize links using campaigns and tags.
@@ -42,24 +48,29 @@ The dashboard helps users monitor link activity and manage their links.
 - Import multiple links using CSV files.
 
 ### Administrative Controls
-- Access administrative link management features.
+- Manage links through administrative features.
 - Block destination hostnames.
-- Manage link availability.
+- Control link availability.
 
-*Note: The features available may depend on the current application configuration.*
+*Feature availability may depend on the application's current configuration.*
 
 ## 4. Technology Stack
 
-- **Programming Language:** Python
-- **Web Framework:** Flask
-- **Database:** SQLite
-- **Frontend:** HTML and CSS
-- **QR Code Generation:** Python QR code libraries
-- **Version Control:** Git and GitHub
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| Flask | Backend web framework |
+| SQLite | Database |
+| HTML | Web page structure |
+| CSS | Styling and layout |
+| Python QR code libraries | QR code generation |
+| Git | Version control |
+| GitHub | Source code hosting |
+| Render | Application deployment |
 
 ## 5. Project Screenshots
 
-The following screenshots demonstrate the current LinkPulse application.
+The following screenshots demonstrate the LinkPulse interface and its main features.
 
 ### Home Page
 
@@ -67,41 +78,46 @@ The following screenshots demonstrate the current LinkPulse application.
 
 ### Create Link
 
-![Create Link](screenshots/create-link.png)
-
-### Short Link Created
-
-![Short Link Created](screenshots/short-link-created.png)
+![LinkPulse Create Link](screenshots/create-link.png)
 
 ### Analytics Dashboard
 
-![Analytics Dashboard](screenshots/dashboard.png)
+![LinkPulse Analytics Dashboard](screenshots/dashboard.png)
 
 ### Dashboard Details
 
-![Dashboard Details](screenshots/dashboard-details.png)
+![LinkPulse Dashboard Details](screenshots/dashboard-details.png)
 
 ### Admin Controls
 
-![Admin Controls](screenshots/admin.png)
+![LinkPulse Admin Controls](screenshots/admin.png)
 
 ## 6. Installation and Setup
 
-Follow these steps to run LinkPulse locally.
+Follow these instructions to run LinkPulse on your local computer.
 
 ### Prerequisites
 
-- Python installed on your computer.
-- Git installed on your computer.
-- A terminal such as PowerShell or the VS Code terminal.
+Install the following:
+- Python
+- Git
+- A terminal such as PowerShell or the VS Code terminal
 
-### Step 1: Open the Project Folder
+### Step 1: Clone the Repository
 
-Open the LinkPulse project folder in VS Code.
+```bash
+git clone https://github.com/bhaweshb88-hub/One-Piece-in-Real-LinkPulse.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd One-Piece-in-Real-LinkPulse
+```
 
 ### Step 2: Create a Virtual Environment
 
-Run:
+On Windows, run:
 
 ```powershell
 python -m venv .venv
@@ -109,7 +125,7 @@ python -m venv .venv
 
 ### Step 3: Activate the Virtual Environment
 
-On Windows PowerShell, run:
+For Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
@@ -124,77 +140,78 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 
 ### Step 4: Install Dependencies
 
-Run:
-
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
 ### Step 5: Start the Application
 
-Run:
-
 ```powershell
 python app.py
 ```
 
-### Step 6: Open LinkPulse
+### Step 6: Open the Application
 
 Open your browser and visit:
 
 http://127.0.0.1:5000
 
-The application should now be available on your local computer.
+The application should now be available locally.
 
-## 7. Live Demo
+## 7. Live Demo and Deployment
 
-**Status:** Deployment pending.
+**Deployment Platform:** Render  
+**Live Application:** https://one-piece-in-real-linkpulse.onrender.com
 
-The application currently runs locally. A public demo URL will be added after deployment.
+The deployed application can be accessed through the live link above.
+
+If the application takes a little time to respond, the hosting service may be waking up after a period of inactivity.
 
 ## 8. Repository Structure
 
 ```text
-LinkPulse_Advanced/
+One-Piece-in-Real-LinkPulse/
 ├── app.py
 ├── requirements.txt
 ├── Procfile
 ├── .gitignore
 ├── README.md
 └── screenshots/
-    ├── home.png
+    ├── admin.png
     ├── create-link.png
-    ├── short-link-created.png
-    ├── dashboard.png
     ├── dashboard-details.png
-    └── admin.png
+    ├── dashboard.png
+    └── home.png
 ```
 
-The `.venv/`, `venv/`, and local SQLite database files should not be uploaded to the public repository.
+The `.venv/`, `venv/`, `__pycache__/`, local database files, and environment files are excluded using `.gitignore`.
 
 ## 9. Security and Repository Hygiene
 
-- Keep environment files and secrets out of the public repository.
-- Use `.gitignore` to exclude virtual environments, local databases, and sensitive configuration files.
-- Configure strong secret keys and administrator passwords before deployment.
+- Keep passwords, secret keys, API tokens, and other credentials out of the public repository.
+- Use `.gitignore` to exclude local environments, databases, and sensitive configuration files.
+- Configure appropriate secret keys and administrator credentials for deployment.
 - Do not publish private credentials in source code or documentation.
+- Review environment variables and deployment settings before making configuration changes.
 
 ## 10. Future Improvements
 
-Potential improvements include:
+Potential future improvements include:
 
-- Deploying the application with a persistent database.
-- Adding user registration and role-based access control.
-- Expanding analytics with referrer, device, browser, and location information where available.
-- Adding workspaces and folders for link organization.
-- Improving campaign reporting and abuse monitoring.
-- Adding link-in-bio pages and device-based redirection.
+- Persistent database storage for production deployments.
+- User registration and role-based access control.
+- More detailed analytics, including referrer, device, and browser information where available.
+- Workspaces and folders for link organization.
+- Improved campaign reporting and abuse monitoring.
+- Link-in-bio pages and device-based redirection.
 
 ## 11. Team
 
 **Team Name:** One Piece in Real  
-**Project:** LinkPulse
+**Project Name:** LinkPulse
 
 ---
 
-**Project Status:** Local application developed; public deployment is pending.
+**Project Status:** Deployed web application with URL shortening, link management, QR code generation, and analytics features.
+
+**Live Demo:** https://one-piece-in-real-linkpulse.onrender.com
